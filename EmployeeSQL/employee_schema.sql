@@ -23,7 +23,7 @@ CREATE TABLE department_manager (
 
 CREATE TABLE employees (
     emp_no int   NOT NULL,
-    emp_title_id varchar   NOT NULL,
+    title_id varchar   NOT NULL,
     birth_date int   NOT NULL,
     first_name varchar   NOT NULL,
     last_name varchar   NOT NULL,
@@ -53,8 +53,8 @@ REFERENCES employees (emp_no);
 ALTER TABLE department_employee ADD CONSTRAINT fk_department_employee_dept_no FOREIGN KEY(dept_no)
 REFERENCES departments (dept_no);
 
-ALTER TABLE department_employee ADD CONSTRAINT fk_department_employee_emp_title_id FOREIGN KEY(emp_title_id)
-REFERENCES titles (title_id)
+ALTER TABLE employees ADD CONSTRAINT fk_employees_title_id FOREIGN KEY(title_id)
+REFERENCES titles (title_id);
 
 ALTER TABLE department_manager ADD CONSTRAINT fk_department_manager_dept_no FOREIGN KEY(dept_no)
 REFERENCES departments (dept_no);
