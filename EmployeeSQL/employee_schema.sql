@@ -24,11 +24,11 @@ CREATE TABLE department_manager (
 CREATE TABLE employees (
     emp_no int   NOT NULL,
     title_id varchar   NOT NULL,
-    birth_date int   NOT NULL,
+    birth_date date  NOT NULL,
     first_name varchar   NOT NULL,
     last_name varchar   NOT NULL,
     sex varchar   NOT NULL,
-    hire_date int   NOT NULL,
+    hire_date date  NOT NULL,
     CONSTRAINT pk_employees PRIMARY KEY (
         emp_no
      )
