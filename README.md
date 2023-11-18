@@ -1,5 +1,5 @@
 sql-challenge
 
-Contains relevant CSV and SQL files
+Contains relevant CSV , SQL, and ERD.png files
 
 
